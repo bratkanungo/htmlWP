@@ -1,0 +1,176 @@
+<style>
+  body {
+  padding: 40px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+}
+
+.grid > article {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.grid > article img {
+  max-width: 100%;
+}
+
+.grid .text {
+  padding: 20px;
+}
+
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<title>192120018 HTML</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-blue w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">HTML</a>
+    <a href="index2.html" class="w3-bar-item w3-button w3-padding-large w3-white">CSS</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">Javascript</a>
+  </div>
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+  </div>
+</div>
+
+
+<!-- Header -->
+<header class="w3-container w3-blue w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">CSS PAGE</h1>
+</header>
+
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+  <div class="container">
+  <main class="grid">
+    <article>
+      <img src="https://picsum.photos/600/400?image=1083" alt="Sample photo">
+      <div class="text">
+        <h3>Applications of CSS</h3>
+        <p>Collaboratively administrate empowered markets via plug-and-play networks.CSS saves time
+    Pages load faster
+    Easy maintenance
+    Superior styles to HTML
+</p>
+        
+      </div>
+    </article>
+    <article>
+      <img src="https://picsum.photos/600/400?image=1063" alt="Sample photo">
+      <div class="text">
+        <h3>Inline CSS - The style Attribute</h3>
+        <p>You can use style attribute of any HTML element to define style rules. These rules will be applied to that element only. Here is the generic syntax âˆ’ The value of style attribute is a combination of style declarations separated by semicolon (;).</p>
+        
+      </div>
+    </article>
+    <article>
+      <img src="https://picsum.photos/600/400?image=1056" alt="Sample photo">
+      <div class="text">
+        <h3>External CSS The link Element</h3>
+        <p>An external style sheet is a separate text file with .css extension. You define all the Style rules within this text file and then you can include this file in any HTML document using link element.</p>
+        
+      </div>
+    </article>
+    <article>
+      <img src="https://picsum.photos/600/400?image=1050" alt="Sample photo">
+      <div class="text">
+        <h3>CSS Comments</h3>
+        <p>Many times, you may need to put additional comments in your style sheet blocks. So, it is very easy to comment any part in style sheet. You can simple put your comments inside /*.....this is a comment in style sheet.....*/.</p>
+        
+      </div>
+    </article>
+    <article>
+      <img src="https://picsum.photos/600/400?image=1041" alt="Sample photo">
+      <div class="text">
+        <h3>CSS Colors - Hex Codes</h3>
+        <p>A hexadecimal is a 6 digit representation of a color. The first two digits(RR) represent a red value, the next two are a green value(GG), and the last are the blue value(BB).Each hexadecimal code will be preceded by a pound or hash sign '#'. Following are the examples to use Hexadecimal notation.</p>
+        
+      </div>
+    </article>
+    <article>
+      <img src="https://picsum.photos/600/400?image=1015" alt="Sample photo">
+      <div class="text">
+        <h3>CSS Colors - RGB Values</h3>
+        <p>This color value is specified using the rgb( ) property. This property takes three values, one each for red, green, and blue. The value can be an integer between 0 and 255 or a percentage.</p>
+      </div>
+    </article>
+    <article>
+      <img src="https://picsum.photos/600/400?image=1041" alt="Sample photo">
+      <div class="text">
+        <h3>CSS | Box model</h3>
+        <p>CSS box model is a container which contains multiple properties including borders, margin, padding and the content itself. It is used to create the design and layout of web pages. It can be used as a toolkit for customizing the layout of different elements. The web browser renders every element as a rectangular box according to the CSS box model.</p>
+      </div>
+    </article>
+    <article>
+      <img src="https://picsum.photos/600/400?image=1056" alt="Sample photo">
+      <div class="text">
+        <h3>Border Area:</h3>
+        <p>It is the area between the boxes' padding and margin. Its dimensions are given by the width and height of border.</p>
+      </div>
+    </article>
+    <article>
+      <img src="https://picsum.photos/600/400?image=1063" alt="Sample photo">
+      <div class="text">
+        <h3>Margin Area:</h3>
+        <p>This area consists of space between border and margin. The dimensions of Margin area are the margin-box width and the margin-box height. It is useful to separate the element from its neighbors.</p>
+      </div>
+    </article>
+    <article>
+      <img src="https://picsum.photos/600/400?image=1083" alt="Sample photo">
+      <div class="text">
+        <h3>Padding Area:</h3>
+        <p>It includes the elements' padding. This area is actually the space around the content area and within the border box. Its dimensions are given by the width of the padding-box and the height of the padding-box.</p>
+      </div>
+    </article>
+    <article>
+      <img src="https://picsum.photos/id/600/400?grayscale&blur=2" alt="Sample photo">
+      <div class="text">
+        <h3>Content Area: </h3>
+        <p>This area consists of content like text, image, or other media content. It is bounded by the content edge and its dimensions are given by content box width and height.</p>
+      </div>
+    </article>
+  </main>
+</div>
